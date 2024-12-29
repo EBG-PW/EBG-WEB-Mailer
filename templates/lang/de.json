@@ -1,25 +1,31 @@
 {
   "translation": {
-    "greeting": "Hallo {{username}}!",
+    "greeting": "Hallo {{username}}",
     "companyContact": "Wenn du Fragen hast, kontaktiere uns unter {{companyEmail}}",
-    "subject": {
-      "registerMail": "Willkommen bei {{companyName}}, bitte verifiziere deine E-Mail-Adresse",
-      "passwordReset": "Dein Passwort zurücksetzen für {{companyName}}",
-      "otpCode": "Dein Einmalpasswort für {{companyName}}"
-    },
+    "companyFullName": "{{companyFullName}}",
+    "companyAddress": "{{companyAddress}}",
     "preHeader": {
       "registerMail": "Bitte verifiziere deine E-Mail-Adresse mit dieser Email",
       "resetPassword": "Resette dein Passwort mit dieser Email"
     },
     "emails": {
       "registerMail": {
+        "subject": "Willkommen bei {{companyName}}, bitte verifiziere deine E-Mail-Adresse",
         "text": "Bitte klicke auf den Link um deine E-Mail-Adresse für deinen {{companyName}} Account zu verifizieren:",
         "linkText": "{{- regUrl}}"
       },
       "passwordReset": {
+        "subject":"Dein Passwort zurücksetzen für {{companyName}}",
         "text": "Bitte klicke auf den Link um dein Passwort für deinen {{companyName}} Account zurückzusetzen:",
         "linkText": "{{- regUrl}}"
-    }
+      },
+      "otpCode": {
+        "subject": "Dein Einmalpasswort für {{companyName}}",
+        "text": "Dein Einmalpasswort für {{companyName}} lautet: {{otpCode}}",
+        "note": "Dieses Einmalpasswort ist nur kurz gültig und kann nur einmal verwendet werden.",
+        "note2": "Bitte gib dieses Einmalpasswort nicht weiter.",
+        "note3": "Wenn du dieses Einmalpasswort nicht angefordert hast, ignoriere diese Nachricht."
+      }
     }
   }
 }

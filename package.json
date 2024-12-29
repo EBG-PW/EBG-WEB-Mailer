@@ -18,8 +18,10 @@
     "@e2etest": "./e2e-test/*"
   },
   "dependencies": {
-    "bullmq": "^5.2.1",
+    "amqplib": "^0.10.5",
+    "dotenv": "^16.4.7",
     "i18next": "^23.14.0",
+    "ioredis": "^5.4.2",
     "module-alias": "^2.2.3",
     "nodemailer": "^6.9.9",
     "pg": "^8.11.3"

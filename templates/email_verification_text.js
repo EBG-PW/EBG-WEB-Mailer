@@ -6,6 +6,8 @@ ${t('emails.registerMail.text', { companyName: process.env.COMPANYNAME })}
 ${t('emails.registerMail.linkText', { regUrl: data.regUrl })}
 
 ${t('companyContact', { companyEmail: process.env.COMPANYEMAIL })}
-        `
+${t('companyFullName', { companyFullName: process.env.COMPANYNAMEFULL })}
+${t('companyAddress', { companyAddress: process.env.COMPANYADDRESS })}
+      `
   }
 }
